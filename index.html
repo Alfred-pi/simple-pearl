@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Simple Pearl — grilles de perles à repasser</title>
+    <meta
+      name="description"
+      content="Créez des grilles de perles à repasser imprimables et suivez la pose perle par perle avec un enfant."
+    />
+    <meta name="theme-color" content="#e4e7ec" />
+
+    <link rel="icon" type="image/svg+xml" href="/simple-pearl/icons/icon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/simple-pearl/icons/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/simple-pearl/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/simple-pearl/manifest.webmanifest" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Pearl" />
+
+    <script>
+      // Apply the saved/system theme before first paint to avoid a flash.
+      (function () {
+        try {
+          var t = localStorage.getItem("simple-pearl:theme");
+          if (t !== "light" && t !== "dark") {
+            t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.dataset.theme = t;
+          document.documentElement.style.colorScheme = t;
+          var m = document.querySelector('meta[name="theme-color"]');
+          if (m) m.setAttribute("content", t === "dark" ? "#0d0e12" : "#e4e7ec");
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/simple-pearl/assets/index-DH1xZXpq.js"></script>
+    <link rel="stylesheet" crossorigin href="/simple-pearl/assets/index-QsEu7-Rx.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

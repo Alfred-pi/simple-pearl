@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Simple Pearl">
+  <defs>
+    <radialGradient id="g-roux" cx="38%" cy="32%" r="72%">
+      <stop offset="0%" stop-color="#ffd9c9"/>
+      <stop offset="22%" stop-color="#e06a44"/>
+      <stop offset="70%" stop-color="#c1401f"/>
+      <stop offset="100%" stop-color="#8f2c12"/>
+    </radialGradient>
+    <radialGradient id="g-amber" cx="38%" cy="32%" r="72%">
+      <stop offset="0%" stop-color="#fff0cf"/>
+      <stop offset="24%" stop-color="#f0c24f"/>
+      <stop offset="72%" stop-color="#d79b23"/>
+      <stop offset="100%" stop-color="#a06e12"/>
+    </radialGradient>
+    <radialGradient id="g-cobalt" cx="38%" cy="32%" r="72%">
+      <stop offset="0%" stop-color="#cfe0ff"/>
+      <stop offset="24%" stop-color="#5c86e0"/>
+      <stop offset="72%" stop-color="#345fc0"/>
+      <stop offset="100%" stop-color="#22408c"/>
+    </radialGradient>
+    <radialGradient id="g-green" cx="38%" cy="32%" r="72%">
+      <stop offset="0%" stop-color="#cdf3df"/>
+      <stop offset="24%" stop-color="#42b47f"/>
+      <stop offset="72%" stop-color="#238a5d"/>
+      <stop offset="100%" stop-color="#125f3e"/>
+    </radialGradient>
+    <radialGradient id="hole" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0d0f16"/>
+      <stop offset="100%" stop-color="#0d0f16" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="#14151c"/>
+  <rect x="8" y="8" width="496" height="496" rx="104" fill="none" stroke="#2a2c38" stroke-width="2"/>
+
+  <!-- 2x2 fuse-bead cluster -->
+  <g>
+    <!-- top-left -->
+    <circle cx="184" cy="184" r="86" fill="url(#g-roux)"/>
+    <circle cx="184" cy="184" r="30" fill="url(#hole)"/>
+    <!-- top-right -->
+    <circle cx="328" cy="184" r="86" fill="url(#g-amber)"/>
+    <circle cx="328" cy="184" r="30" fill="url(#hole)"/>
+    <!-- bottom-left -->
+    <circle cx="184" cy="328" r="86" fill="url(#g-cobalt)"/>
+    <circle cx="184" cy="328" r="30" fill="url(#hole)"/>
+    <!-- bottom-right -->
+    <circle cx="328" cy="328" r="86" fill="url(#g-green)"/>
+    <circle cx="328" cy="328" r="30" fill="url(#hole)"/>
+  </g>
+</svg>
